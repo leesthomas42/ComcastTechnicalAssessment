@@ -15,6 +15,8 @@ import java.util.LinkedList;
  */
 public class PositiveIntegerIterator implements Iterator<Integer> {
 	
+	//Used a LinkedList because we are adding N number of elements, then parsing the list one at a time. A LinkedList is better at adding elements compared to the ArrayList, 
+	//and it's slower traverse time is not a concern because the methods only look at the next element
 	private LinkedList<Integer> list;
 	private int pointer;
 	
